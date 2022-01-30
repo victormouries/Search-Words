@@ -33,10 +33,19 @@
       document.getElementById("ClickBtn").click();
     }
   });
+  
+  // set Search String to Upper Case
+  searchString.addEventListener("input", function(event) {
+  var input = event.target;
+  var start = input.selectionStart;
+  var end = input.selectionEnd;
+  input.value = input.value.toLocaleUpperCase();
+  input.setSelectionRange(start, end);
+})
 
   function callFindWords() {
     let field_searchString = document.getElementById("searchString");
-    let searchString = field_searchString.value;
+    let searchString = field_searchString.value.toLowerCase();
     let words_found = findWords(searchString)
     let result_div = document.getElementById("result");
     // clear previous results
