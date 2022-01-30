@@ -4,10 +4,14 @@
 
   input:not([type=submit]):not([type=file]) {
     font-size: 1.2em;
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 .btnSearch {
   font-size: 1.2em;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
   .results {
