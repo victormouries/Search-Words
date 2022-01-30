@@ -14,14 +14,26 @@
 
   <h1>Hints for Wordle</h1>
 
-  <input id="searchString" type="text" value=".u..e">
+  <input id="searchString" type="text" value=".u..e" on>
 
-  <button type="button" class="btnSearch" onclick="callFindWords()">Search</button>
-    <h2>Result</h2>
+  <button type="button" class="btnSearch" id="ClickBtn" onclick="callFindWords()">Search</button>
+  <h2>Result</h2>
   <div id="result" class="results"></div>
 </body>
 
 <script>
+  // Trigger a Button Click on Enter
+  // Execute a function when the user releases a key on the keyboard
+  searchString.addEventListener("keyup", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.getElementById("ClickBtn").click();
+    }
+  });
+
   function callFindWords() {
     let field_searchString = document.getElementById("searchString");
     let searchString = field_searchString.value;
@@ -30,25 +42,20 @@
     // clear previous results
     while (result_div.firstChild) {
       result_div.removeChild(result_div.lastChild);
-  }
-
+    }
     if (words_found.length > 0) {
-      words_found.forEach(function (word) {
+      words_found.forEach(function(word) {
         let wordDiv = document.createElement("div");
         wordDiv.className = "word";
         wordDiv.textContent = word;
-
         // add the div to the result div
         result_div.appendChild(wordDiv);
-
       });
     } else {
       let noWordDiv = document.createElement("div");
       noWordDiv.className = "emptyResult";
       noWordDiv.textContent = "no words matching " + searchString;
-
     }
-
     //testing
   }
 </script>
