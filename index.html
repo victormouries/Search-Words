@@ -27,6 +27,10 @@
     let searchString = field_searchString.value;
     let words_found = findWords(searchString)
     let result_div = document.getElementById("result");
+    // clear previous results
+    while (result_div.firstChild) {
+      result_div.removeChild(result_div.lastChild);
+  }
 
     if (words_found.length > 0) {
       words_found.forEach(function (word) {
