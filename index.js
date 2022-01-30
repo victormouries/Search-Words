@@ -1,6 +1,6 @@
-const word_list = ["adieu", "juice", "quant", "music", "voice", "ratch"];
 
 //letter = prompt("Please enter a letter", "u");
+
 
 function findWords(searchString) {
   console.clear();
