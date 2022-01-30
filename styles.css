@@ -12,4 +12,9 @@
     padding: 6px;
     margin: 6px;
   }
+
+  .emptyResult {
+    background-color: red;
+
+  }
   

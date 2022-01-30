@@ -26,8 +26,27 @@
     let field_searchString = document.getElementById("searchString");
     let searchString = field_searchString.value;
     let words_found = findWords(searchString)
+    let result_div = document.getElementById("result");
+
+    if (words_found.length > 0) {
+      words_found.forEach(function (word) {
+        let wordDiv = document.createElement("div");
+        wordDiv.className = "word";
+        wordDiv.textContent = word;
+
+        // add the div to the result div
+        result_div.appendChild(wordDiv);
+
+      });
+    } else {
+      let noWordDiv = document.createElement("div");
+      noWordDiv.className = "emptyResult";
+      noWordDiv.textContent = "no words matching " + searchString;
+
+    }
+
+    //testing
   }
 </script>
 
 </html>
-
