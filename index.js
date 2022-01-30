@@ -1,4 +1,4 @@
-const word_list = ["juice", "quant", "music", "adieu", "voice", "ratch"];
+const word_list = ["adieu", "juice", "quant", "music", "voice", "ratch"];
 
 let letter = ".u..e"; // examples = i.e matches juice
 //letter = prompt("Please enter a letter", "u");
