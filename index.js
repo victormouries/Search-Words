@@ -26,7 +26,8 @@ if (words_found.length > 0) {
     wordDiv.textContent = word;
 
     // add the div to the result div
- 
+    result_div.appendChild(wordDiv);
+
   });
 } else {
 }
