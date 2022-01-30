@@ -15,3 +15,7 @@ word_list.forEach(function (word) {
 if (words_found == 0) {
   console.log("No Words Found");
 }
+
+function findWords (searchString) {
+  alert("in the javascript we searched for " + searchString)
+}
