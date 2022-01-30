@@ -12,7 +12,7 @@
 
   <h1>Hints for Wordle</h1>
 
-  <input id="searchString" type="text">
+  <input id="searchString" type="text" value=".u..e">
 
   <button type="button" onclick="callFindWords()">Search</button>
 
@@ -22,7 +22,7 @@
   function callFindWords() {
     let field_searchString = document.getElementById("searchString");
     let searchString = field_searchString.value;
-    alert(searchString)
+    let words_found = findWords(searchString)
   }
 </script>
 </html>
