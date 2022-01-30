@@ -3,7 +3,7 @@
   }
 
   input:not([type=submit]):not([type=file]) {
-    font-size: 1.2em;
+    font-size: 1.em;
 }
 
   .results {
