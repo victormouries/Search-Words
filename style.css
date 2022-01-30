@@ -1,0 +1,15 @@
+* {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .results {
+    display: flex;
+  }
+  
+  .word {
+    background-color: #04aa6d;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 6px;
+    margin: 6px;
+  }
+  
