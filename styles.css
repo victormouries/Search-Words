@@ -1,8 +1,14 @@
 * {
     font-family: "Source Sans Pro", sans-serif;
   }
+
+  input:not([type=submit]):not([type=file]) {
+    font-size: 1.2em;
+}
+
   .results {
     display: flex;
+    flex-wrap: wrap;
   }
   
   .word {
