@@ -37,16 +37,6 @@ input:not([type="submit"]):not([type="file"]) {
     background-color: lightblue;
   }
 
-  .word {
-    border: 1px dashed #bbb;
-    background: #ebffe0;
-    border-radius: 5px;
-    font-size: 45px;
-    padding: 6px;
-    margin: 6px;
-    color: #2484c6;
-    text-transform: capitalize;
-  }
 
   * {
     font-size: 40px;
