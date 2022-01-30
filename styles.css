@@ -1,11 +1,11 @@
 * {
-  font-family: "Comic Sans MS", "Comic Sans"
-  }
+  font-family: "Comic Sans MS", "Comic Sans";
+}
 
-  input:not([type=submit]):not([type=file]) {
-    font-size: 1.2em;
-    border: 1px solid;
-    border-radius: 8px;
+input:not([type="submit"]):not([type="file"]) {
+  font-size: 1.2em;
+  border: 1px solid;
+  border-radius: 8px;
 }
 
 .btnSearch {
@@ -14,34 +14,41 @@
   border-radius: 8px;
 }
 
-  .results {
-    display: flex;
-    flex-wrap: wrap;
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.word {
+  border: 1px dashed #bbb;
+  background: #ebffe0;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 6px;
+  margin: 6px;
+  color: #2484c6;
+  text-transform: capitalize;
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    background-color: lightblue;
   }
-  
+
   .word {
     border: 1px dashed #bbb;
     background: #ebffe0;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 30px;
     padding: 6px;
     margin: 6px;
     color: #2484c6;
     text-transform: capitalize;
   }
-/* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-        body {
-      background-color: lightblue;
-    }
-    * {
-      font-size: 40px;
-    }
-
+  * {
+    font-size: 40px;
   }
-  
+}
