@@ -1,5 +1,3 @@
-
-
 function findWords(searchString) {
   console.clear();
   console.log("Searching for words matching " + searchString);
